@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Alex Frame Photography</title>
+    <style>
+      /* Base Styles */
+      body {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        background-color: #fafafa;
+      }
+
+      .main {
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Header Section */
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        text-align: center;
+        background-color: #333;
+        padding: 0 2rem;
+      }
+
+      .title-link {
+        text-decoration: none;
+        color: white;
+      }
+
+      .title {
+        font-size: 3.5rem;
+      }
+
+      /* Navigation */
+      .nav {
+        background: #fff;
+      }
+
+      .nav-list {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+        margin: 0;
+        padding: 1.25rem;
+      }
+
+      .nav-link {
+        text-decoration: none;
+        color: #333;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+
+      /* Contact Section */
+      .contact-container {
+        max-width: 900px;
+        margin: 80px auto;
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+      }
+
+      .contact-info h2 {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+
+      .contact-info p {
+        color: #666;
+        margin-bottom: 30px;
+      }
+
+      .info-item {
+        margin-bottom: 20px;
+      }
+
+      .info-item h3 {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        color: #999;
+      }
+
+      /* Form Styles */
+      .contact-form form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group label {
+        display: block;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        background: #fff;
+        font-family: inherit;
+        box-sizing: border-box; 
+      }
+
+      .submit-btn {
+        background: #333;
+        color: #fff;
+        padding: 15px;
+        border: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1px;
+        cursor: pointer;
+      }
+
+      .footer {
+        background: #111;
+        color: #fff;
+        text-align: center;
+        padding: 40px 0;
+        margin-top: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <header class="header">
+        <a href="/" class="title-link">
+        <h1 class="title">Alex Frame</h1>
+      </a>
+        <nav class="nav">
+          <ul class="nav-list">
+          <li><a class="nav-link" href="/about">About</a></li>
+          <li><a class="nav-link" href="/contact-me">Contact Me</a></li>
+        </ul>
+        </nav>
+      </header>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2>Let's Work Together</h2>
+          <p>
+            I am currently available for editorial assignments and private
+            commissions worldwide. Fill out the form or reach out directly.
+          </p>
+          <div class="info-item">
+            <h3>Email</h3>
+            <p>hello@alexframe.com</p>
+          </div>
+          <div class="info-item">
+            <h3>Studio</h3>
+            <p>123 Creative Way, Brooklyn<br />New York, NY 11201</p>
+          </div>
+          <div class="info-item">
+            <h3>Social</h3>
+            <p>Instagram / Behance / LinkedIn</p>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form action="#">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Project Type</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="e.g. Editorial, Wedding, Portrait" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Inquiry</button>
+          </form>
+        </div>
+      </div>
+      <footer class="footer">
+        <p>&copy; 2026 Alex Frame Photography. All rights reserved.</p>
+      </footer>
+        </body>
+    </main>
+</html>

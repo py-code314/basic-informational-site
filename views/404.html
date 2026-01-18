@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - Page Not Found | Alex Frame Photography</title>
+    <style>
+      /* Base Styles */
+      body {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        background-color: #fafafa;
+        min-height: 100svh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .main {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+      }
+
+      /* Header Section */
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        text-align: center;
+        background-color: #333;
+        padding: 0 2rem;
+      }
+
+      .title-link {
+        text-decoration: none;
+        color: white;
+      }
+
+      .title {
+        font-size: 3.5rem;
+      }
+
+      /* Navigation */
+      .nav {
+        background: #fff;
+      }
+
+      .nav-list {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+        margin: 0;
+        padding: 1.25rem;
+      }
+
+      .nav-link {
+        text-decoration: none;
+        color: #333;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+
+      /* 404 Content */
+      .error-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 20px;
+      }
+
+      .error-code {
+        font-size: 8rem;
+        font-weight: 100;
+        margin: 0;
+        line-height: 1;
+        color: #ddd;
+      }
+
+      .error-message h2 {
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-size: 1.5rem;
+      }
+
+      .error-message p {
+        color: #666;
+        max-width: 400px;
+      }
+
+      .back-home {
+        display: inline-block;
+        text-decoration: none;
+        color: #333;
+        border: 1px solid #333;
+        padding: 12px 30px;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        font-weight: bold;
+      }
+
+      .footer {
+        background: #111;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <a href="/" class="title-link">
+        <h1 class="title">Alex Frame</h1>
+      </a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="/about">About</a></li>
+          <li><a class="nav-link" href="/contact-me">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="error-container">
+        <p class="error-code">404</p>
+        <div class="error-message">
+          <h2>Out of Focus</h2>
+          <p>
+            The page you are looking for has been moved or no longer exists.
+            Let's get you back to the gallery.
+          </p>
+          <a href="/index" class="back-home">Return to Home</a>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>&copy; 2026 Alex Frame Photography</p>
+    </footer>
+  </body>
+</html>

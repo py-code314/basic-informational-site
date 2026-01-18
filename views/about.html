@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Alex Frame Photography</title>
+    <style>
+      /* Base Styles */
+      body {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        background-color: #fafafa;
+      }
+
+      /* Header Section */
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        text-align: center;
+        background-color: #333;
+        padding: 0 2rem;
+      }
+
+      .title-link {
+        text-decoration: none;
+        color: white;
+      }
+
+      .title {
+        font-size: 3.5rem;
+      }
+
+      /* Navigation */
+      .nav {
+        background: #fff;
+      }
+
+      .nav-list {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+        margin: 0;
+        padding: 1.25rem;
+      }
+
+      .nav-link {
+        text-decoration: none;
+        color: #333;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+
+      /* About Section Layout */
+      .about-container {
+        max-width: 1000px;
+        margin: 50px auto;
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .about-image {
+        width: 300px;
+        height: 400px;
+        justify-self: end;
+      }
+
+      .about-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        box-shadow: 20px 20px 0px #eee;
+      }
+
+      .about-text h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        /* letter-spacing: 2px; */
+      }
+
+      .about-text p {
+        font-size: 1.1rem;
+        color: #666;
+        margin-bottom: 20px;
+      }
+
+      /* Skills/Services Section */
+      .details-section {
+        background: #fff;
+        padding: 40px 20px;
+        border-top: 1px solid #eee;
+      }
+
+      .details-grid {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 40px;
+      }
+
+      .detail-item h2 {
+        text-transform: uppercase;
+        font-size: 1rem;
+        border-bottom: 2px solid #333;
+        display: inline-block;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+      }
+
+      .awards-text {
+        width: 70%;
+      }
+
+      .footer {
+        background: #111;
+        color: #fff;
+        text-align: center;
+        padding: 40px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <a href="/" class="title-link">
+        <h1 class="title">Alex Frame</h1>
+      </a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="/about">About</a></li>
+          <li><a class="nav-link" href="/contact-me">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="about-container">
+      <div class="about-image">
+        <img
+          src="https://images.unsplash.com/photo-1623348282113-50395974159c?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Alex Frame Portrait" />
+      </div>
+      <div class="about-text">
+        <h2>The Story</h2>
+        <p>
+          Based in New York City, I have spent the last decade capturing the
+          quiet moments between the chaos. My work focuses on the intersection
+          of natural light and human emotion.
+        </p>
+        <p>
+          Whether I'm shooting a high-fashion editorial or a remote mountain
+          landscape, my goal is the same: to tell a story that feels honest and
+          timeless.
+        </p>
+        <p>
+          My work has been featured in <em>Vogue</em>,
+          <em>National Geographic</em>, and various independent galleries across
+          Europe.
+        </p>
+      </div>
+    </section>
+
+    <section class="details-section">
+      <div class="details-grid">
+        <div class="detail-item">
+          <h2>Specialties</h2>
+          <p>
+            Portraiture<br />Architectural Photography<br />Event Coverage<br />Film
+            & Digital
+          </p>
+        </div>
+        <div class="detail-item">
+          <h2>Awards</h2>
+          <p class="awards-text">
+            2024 LensCulture Portrait Award<br />2022 IPA Nature Photographer of
+            the Year<br />Exhibited at MoMA (2025)
+          </p>
+        </div>
+        <div class="detail-item">
+          <h2>Gear</h2>
+          <p>
+            Leica M11<br />Sony A7R V<br />35mm & 50mm Prime Lenses<br />Profoto
+            Lighting Systems
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2026 Alex Frame Photography. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
