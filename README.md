@@ -8,7 +8,6 @@ This is a solution to the project - [Basic Informational Site](https://www.theod
 - [Basic Informational Site (The Odin Project)](#basic-informational-site-the-odin-project)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
-    - [Links](#links)
   - [Credits](#credits)
     - [Images](#images)
 
@@ -17,12 +16,6 @@ This is a solution to the project - [Basic Informational Site](https://www.theod
 ## Overview
 
 This is a basic website made with node http server which contains a home page, about page, contact page and a  a 404 error page.
-
-
-
-### Links
-
-- [Live Site URL](https://chicken-run-basic-informational-site.netlify.app/)
 
 
 ## Credits
