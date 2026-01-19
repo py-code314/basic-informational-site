@@ -7,7 +7,7 @@ const fs = require('fs')
 const server = http.createServer((req, res) => {
   let path = './views/'
 
-  // Serve file based on url
+  // Serve file based on the url
   if (req.url === '/' || req.url === '/index') {
     path += 'index.html'
   } else if (req.url === '/about') {
@@ -20,12 +20,20 @@ const server = http.createServer((req, res) => {
 
   // Read and send html file
   fs.readFile(path, 'utf8', (err, data) => {
+    // Handle error
     if (err) {
       console.log(err)
       return
     }
 
-    // Send file
+    // Status code 404 for 404 page
+    if (path === './views/404.html') {
+      res.writeHead(404, { 'Content-Type': 'text/html' })
+      res.end(data)
+      return
+    }
+
+    // Status code 200 for other pages
     res.writeHead(200, { 'Content-Type': 'text/html' })
     res.end(data)
   })
