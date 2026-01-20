@@ -1,41 +1,30 @@
 // Import modules
-const http = require('http')
-const fs = require('fs')
+const express = require('express')
 
-// Create a local server to receive data from browser
-const server = http.createServer((req, res) => {
-  let path = './views/'
+// Create express server
+const app = express()
 
-  // Serve file based on the url
-  if (req.url === '/' || req.url === '/index') {
-    path += 'index.html'
-  } else if (req.url === '/about') {
-    path += 'about.html'
-  } else if (req.url === '/contact-me') {
-    path += 'contact-me.html'
-  } else {
-    path += '404.html'
-  }
+// Port number
+const PORT = process.env.PORT || 8080
+app.listen(PORT)
 
-  // Read and send html file
-  fs.readFile(path, 'utf8', (err, data) => {
-    // Handle error
-    if (err) {
-      console.log(err)
-      return
-    }
-
-    // Status code 404 for 404 page
-    if (path === './views/404.html') {
-      res.writeHead(404, { 'Content-Type': 'text/html' })
-      res.end(data)
-      return
-    }
-
-    // Status code 200 for other pages
-    res.writeHead(200, { 'Content-Type': 'text/html' })
-    res.end(data)
-  })
+// Routes
+app.get('/', (req, res) => {
+  res.sendFile('./views/index.html', { root: __dirname })
 })
 
-server.listen(8080)
+app.get('/about', (req, res) => {
+  res.sendFile('./views/about.html', { root: __dirname })
+})
+
+app.get('/contact-me', (req, res) => {
+  res.sendFile('./views/contact-me.html', { root: __dirname })
+})
+
+
+// Catch all
+app.use((req, res) => {
+  res.status(404).sendFile('./views/404.html', { root: __dirname })
+})
+
+
