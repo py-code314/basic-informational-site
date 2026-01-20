@@ -2,7 +2,6 @@
 const http = require('http')
 const fs = require('fs')
 
-
 // Create a local server to receive data from browser
 const server = http.createServer((req, res) => {
   let path = './views/'
