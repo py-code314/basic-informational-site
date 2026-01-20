@@ -21,7 +21,7 @@ This is a basic website made with node http server which contains a home page, a
 
 ## Setup
 
-1. To run this project, make sure you have node installed and run `node index.js` in the terminal to start the server
+1. To run this project, make sure you have node installed and run `npm run start` in the terminal to start the server
 2. Go to [localhost:8080](http://localhost:8080) in your browser to see the home page of the website
 3. You can also go to [localhost:8080/about](http://localhost:8080/about) and [localhost:8080/contact-me](http://localhost:8080/contact-me) to see the about page and contact page
 4. If you enter an invalid url, you will be redirected to the 404 error page
